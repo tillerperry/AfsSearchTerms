@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afs.SearchTerms.Web", "Afs.SearchTerms.Web\Afs.SearchTerms.Web.csproj", "{04FE018C-F68C-4996-AF52-78F5C1263CBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04FE018C-F68C-4996-AF52-78F5C1263CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FE018C-F68C-4996-AF52-78F5C1263CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FE018C-F68C-4996-AF52-78F5C1263CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FE018C-F68C-4996-AF52-78F5C1263CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
