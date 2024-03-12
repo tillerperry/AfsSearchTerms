@@ -1,4 +1,5 @@
 ﻿using Afs.SearchTerms.Web.DataContext;
+using Afs.SearchTerms.Web.Externsions;
 using Afs.SearchTerms.Web.Options;
 using Afs.SearchTerms.Web.Services.Interfaces;
 using Afs.SearchTerms.Web.Services.Providers;
@@ -13,6 +14,8 @@ services.AddControllersWithViews();
  services.AddScoped<IHttpServices,HttpServices>();
 services.AddScoped<ITranslatorDbRepository,TranslatorDbRepository>();
 services.AddScoped<ITranslatorService,TranslatorService>();
+
+services.AddAfsPrivateKeyAuth();
 
 
 //AppContext

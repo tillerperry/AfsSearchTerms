@@ -1,0 +1,51 @@
+<mxfile host="Electron" modified="2024-03-12T07:23:04.063Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="R2WOIX1T-EzNWlU8l9Eq" version="22.0.2" type="device">
+  <diagram name="Page-1" id="QC7uMzF0r-m4A9Yy3OIU">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PZRUnClTYt8PRt46bsb8-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PZRUnClTYt8PRt46bsb8-1" target="PZRUnClTYt8PRt46bsb8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-26" value="1. Get translated text&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PZRUnClTYt8PRt46bsb8-24">
+          <mxGeometry x="-0.1171" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-1" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Translator Web API" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=api" vertex="1" parent="1">
+          <mxGeometry x="392" y="393" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-2" value="LeetSpeak&amp;nbsp; API" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/API_Management_Services.svg;fillColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="398.25" y="140" width="97.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-3" value="postgresql" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;fillColor=#3399FF;gradientColor=#3399FF;" vertex="1" parent="1">
+          <mxGeometry x="427" y="720" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-5" value="User" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#515151;shape=mxgraph.mscae.system_center.admin_console" vertex="1" parent="1">
+          <mxGeometry x="45" y="437" width="80" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-17" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.413;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PZRUnClTYt8PRt46bsb8-5" target="PZRUnClTYt8PRt46bsb8-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="113.03999999999996" y="474.019" as="sourcePoint" />
+            <mxPoint x="371" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-18" value="1. make a translation request&lt;br&gt;2. Display list of translated texts" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="125" y="385" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-19" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.4;exitY=-0.062;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="451" y="715.04" as="sourcePoint" />
+            <mxPoint x="450" y="510" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZRUnClTYt8PRt46bsb8-25" value="1.Save translated data to db&lt;br&gt;2. Retrieve translated data from Db" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PZRUnClTYt8PRt46bsb8-19">
+          <mxGeometry x="0.0831" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

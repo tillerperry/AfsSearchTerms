@@ -31,7 +31,8 @@ public class HttpServices : IHttpServices
         {
             _logger.LogDebug("GetFunTranslatorAsync Raw response after sending notification {request}", request);
             // Build the URL with the parameters
-            var url = await _externalApiConfigs.FunTranslatorApi.AllowAnyHttpStatus().PostJsonAsync(request);
+            var requestData = new { text = request.Text };
+            var url = await _externalApiConfigs.FunTranslatorApi.AllowAnyHttpStatus().PostJsonAsync(requestData);
 
             // Make a post request
             var rawResponse = await url.GetStringAsync();
