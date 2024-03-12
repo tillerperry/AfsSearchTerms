@@ -24,11 +24,12 @@ namespace Afs.SearchTerms.Web.Migrations
 
             modelBuilder.Entity("Afs.SearchTerms.Web.Models.TranslationSearch", b =>
                 {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("text");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
 
                     b.Property<string>("Text")
                         .HasColumnType("text");
@@ -38,6 +39,8 @@ namespace Afs.SearchTerms.Web.Migrations
 
                     b.Property<string>("Translation")
                         .HasColumnType("text");
+
+                    b.HasKey("Id");
 
                     b.ToTable("TranslationSearch");
                 });

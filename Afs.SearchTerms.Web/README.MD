@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 Enables a web user to translate any text to LeetSpeak
 
 # Features
@@ -22,7 +22,6 @@ Enables a web user to translate any text to LeetSpeak
 
 
 # Authors
-
 1. Godwin Dorglo
 
 

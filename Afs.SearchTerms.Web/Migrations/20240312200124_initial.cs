@@ -15,7 +15,7 @@ namespace Afs.SearchTerms.Web.Migrations
                 name: "TranslationSearch",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "text", nullable: true),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     Translation = table.Column<string>(type: "text", nullable: true),
                     Text = table.Column<string>(type: "text", nullable: true),
@@ -23,6 +23,7 @@ namespace Afs.SearchTerms.Web.Migrations
                 },
                 constraints: table =>
                 {
+                    table.PrimaryKey("PK_TranslationSearch", x => x.Id);
                 });
         }
 

@@ -6,9 +6,11 @@ namespace Afs.SearchTerms.Web.Models;
 
 #nullable disable
 
-[Keyless]
-public class TranslationSearch
+
+public class TranslationSearch 
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public string Id { get; set; } = Guid.NewGuid().ToString("N");
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public string Translation { get; set; }

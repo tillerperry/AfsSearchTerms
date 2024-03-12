@@ -28,25 +28,25 @@ public class TranslatorService  : ITranslatorService
         try
         {
             _logger.LogDebug("GetFunTranslatorAsync=>{request} :: ",input.Serialize());
-            if (input.Text  is not  null)
-            {
-                return new ApiResponse<TranslatorResponse>
-                {
-                    Message = "success",
-                    Code = StatusCodes.Status200OK,
-                    IsSuccessful = true,
-                    Data = new TranslatorResponse
-                    {
-                        Success = null,
-                        Contents = new Contents
-                        {
-                            Translated = "4884'[]499202lett",
-                            Text = input.Text,
-                            Translation = "leetspeak"
-                        }
-                    }
-                }; 
-            }
+            // if (input.Text  is not  null)
+            // {
+            //     return new ApiResponse<TranslatorResponse>
+            //     {
+            //         Message = "success",
+            //         Code = StatusCodes.Status200OK,
+            //         IsSuccessful = true,
+            //         Data = new TranslatorResponse
+            //         {
+            //             Success = null,
+            //             Contents = new Contents
+            //             {
+            //                 Translated = "4884'[]499202lett",
+            //                 Text = input.Text,
+            //                 Translation = "leetspeak"
+            //             }
+            //         }
+            //     }; 
+            // }
             
             var getFunTranslatorResults = await _httpServices.GetFunTranslatorAsync(input);
 

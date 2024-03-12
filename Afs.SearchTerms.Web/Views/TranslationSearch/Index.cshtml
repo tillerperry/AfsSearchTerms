@@ -8,12 +8,12 @@
 
 <main class="container">
     <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
-        <div class="lh-1">
-          <button class="btn btn-primary justify-content-center" id="loader"  type="button" disabled style="display: none">
+       
+          <button class="btn btn-primary align-middle loader"  type="button" disabled style="display: none">
                       <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                      Loading...
+                      Translating text please wait...
                   </button>
-        </div>
+        
     </div>
 
 
@@ -141,13 +141,15 @@
                    var isuccessful = response?.isSuccessful;
                    var translatedtext = isuccessful ? translatedText : dataMessage;
                    
+                  $('.loader').hide();
+                   
                    $('#displaytextresult').val(translatedtext);
 
                      Swal.fire({
            
                        icon: "info",
                        text:"Your Translated Text Is ::: " + translatedtext,
-                       showCancelButton: true,
+                       showCancelButton: false,
                        confirmButtonText: "Show list",
                      
                      }).then((result) => {
@@ -161,7 +163,7 @@
                 },
 
                   beforeSend: function() {
-                  //   $('#loader').show();
+                    $('.loader').show();
                   }
                   
                 });
@@ -170,8 +172,10 @@
         
         //data table initialization
         $(document).ready( function () {
+              $.fn.dataTable.ext.errMode = 'none'; // Add this line
              $('#transLatedListTable').DataTable({
-                errorMode: 'none'
+              debug: false
+
             });
         } );
         

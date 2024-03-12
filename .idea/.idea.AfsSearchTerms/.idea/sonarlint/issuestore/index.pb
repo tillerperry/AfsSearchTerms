@@ -73,10 +73,6 @@ OAfs.SearchTerms.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css
 MAfs.SearchTerms.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map,7/f/7fe4caee03bc2d560276bca4fccb4342d312f5e8
 q
 AAfs.SearchTerms.Web/Migrations/20240309121259_initial.Designer.cs,b/d/bdafcdb50943be486924d7809896a2d707acae8e
-h
-8Afs.SearchTerms.Web/Migrations/20240309121259_initial.cs,2/b/2b0829645b4a6ad5270aef11ae8fe9a65b9cbb38
-s
-CAfs.SearchTerms.Web/Migrations/ApplicationDbContextModelSnapshot.cs,9/0/9047efa565777df31df51e4dc5458420608975ad
 j
 :Afs.SearchTerms.Web/Views/TranslationSearch/Privacy.cshtml,2/6/26f9dfe57e2cd25700c9aeb7ed72af53f189c5fc
 a
@@ -95,8 +91,6 @@ c
 0Afs.SearchTerms.Web/appsettings.Development.json,6/2/627bb5f80ea3ce5027d685c96d012a1c154cdbd2
 d
 4Afs.SearchTerms.Web/DataContext/SampleDataContext.cs,b/5/b5f739deceee8d928cb623b2accaf6b972dfd1cb
-g
-7Afs.SearchTerms.Web/DataContext/ApplicationDbContext.cs,f/1/f19af2f85bd46fb2cfcf93388925c8d90c77624e
 \
 ,Afs.SearchTerms.Web/Models/ErrorViewModel.cs,c/8/c8e6364154d57d8ef976b1bea43608ce0a74372e
 b
@@ -167,8 +161,6 @@ v
 FAfs.SearchTerms.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map,6/1/61309cb13bd3d1ace513641f9401cefe7acd354a
 [
 +Afs.SearchTerms.Web/Views/_ViewStart.cshtml,7/3/731d02b61be521f54646c831941293d6f8481fff
-_
-/Afs.SearchTerms.Web/Views/Shared/_Layout.cshtml,2/4/246261d2af7bec57e53ff906cfe1d03ed759f188
 B
 AfsSearchTerms.sln,b/e/be00fbc7df334c44d916e6acb78306bfe7115118
 n
@@ -177,5 +169,3 @@ n
 Xtests/AfsSearchTerms.Web.Tests/obj/Debug/net6.0/AfsSearchTerms.Web.Tests.AssemblyInfo.cs,8/3/83756f619605c0dd48c38946bcf0fea6f515df06
 Š
 Ztests/AfsSearchTerms.Web.Tests/obj/Debug/net6.0/AfsSearchTerms.Web.Tests.GlobalUsings.g.cs,f/7/f7207ad1acbf1a7a28242822d31d8968f7977065
-f
-6tests/AfsSearchTerms.Web.Tests/Components/DiFixture.cs,0/3/03c2b9b3f695db98db3383c9830ef67d5fdfb144
