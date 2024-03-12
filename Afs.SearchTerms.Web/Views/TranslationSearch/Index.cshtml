@@ -129,38 +129,41 @@
                   url: 'http://localhost:5225/TranslationSearch/Create',
                   type: 'POST',
                   data: JSON.stringify({text: searchInput}),
-                  contentType: "application/json; charset=utf-8",
-                // success: function(response) {
-                //      
-                //       
-                //    var translatedText = response.data.contents.translated;
-                // 
-                //      Swal.fire({
-                //        title: "Do you want to save the changes?",
-                //        showDenyButton: true,
-                //        showCancelButton: true,
-                //        confirmButtonText: "Save",
-                //        denyButtonText: `Don't save`
-                //      }).then((result) => {
-                //        /* Read more about isConfirmed, isDenied below */
-                //        if (response.data) {
-                //          Swal.fire("Saved!", "Translated Text: " + translatedText, "success");
-                //       }
-                //          $('#loader').hide();
-                //      });
-                //     
-                //     
-                // },
+                contentType: "application/json; charset=utf-8",
+                    headers: {
+                        "Authorization": "privatekey 5758wed67uydf4hjsk4sgf"
+                    },
+                success: function(response) {
+
+                      //Arrage 
+                   let translatedText = response?.data?.contents?.translated;
+                   let dataMessage = response?.message;
+                   var isuccessful = response?.isSuccessful;
+                   var translatedtext = isuccessful ? translatedText : dataMessage;
+                   
+                   $('#displaytextresult').val(translatedtext);
+
+                     Swal.fire({
+           
+                       icon: "info",
+                       text:"Your Translated Text Is ::: " + translatedtext,
+                       showCancelButton: true,
+                       confirmButtonText: "Show list",
+                     
+                     }).then((result) => {
+                      
+                    if (result) {
+                        window.location.reload();
+                    }
+                     });
+
+
+                },
 
                   beforeSend: function() {
-                     $('#loader').show();
-                  },
-                  completed: function(response) {
-
-                    alert(response.data.message)
-                        $('#loader').hide();
+                  //   $('#loader').show();
                   }
-             
+                  
                 });
             });
         });

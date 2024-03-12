@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Afs.SearchTerms.Web.DataContext;
 using Afs.SearchTerms.Web.Models.Requests;
 using Afs.SearchTerms.Web.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,6 +33,7 @@ namespace Afs.SearchTerms.Web.Controllers
        
         // POST : TranslationSearch/Create
         [HttpPost]
+        [Authorize(AuthenticationSchemes = "PrivateKey")]
         public async Task<IActionResult> Create([FromBody] FunTranslatorRequest input)
         {
             var response = await _translatorService.TranslateAndCreateTextAsync(input);
