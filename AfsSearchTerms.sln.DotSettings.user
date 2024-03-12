@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6b0727e4_002Dc15a_002D4fea_002D8394_002Dc5ecd2b0ad2f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TranslateAndCreateTextAsync_Should_Return_Success_And_Unsuccessful_When_When_Translator_Response_Is_Not_Successful" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::E6F49BD7-9324-4B27-A6C0-A94ACB8BF94C::net6.0::AfsSearchTerms.Web.Tests.TranslatorServiceTests.TranslateAndCreateTextAsync_Should_Return_Success_And_Unsuccessful_When_When_Translator_Response_Is_Not_Successful&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E6F49BD7-9324-4B27-A6C0-A94ACB8BF94C::net6.0::AfsSearchTerms.Web.Tests.TranslatorServiceTests.TranslateAndCreateTextAsync_Should_Return_Success_And_Successful_When_When_Translator_Response_Is_Successful&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

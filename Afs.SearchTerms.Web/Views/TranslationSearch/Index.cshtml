@@ -114,11 +114,8 @@
     <script>
         $(document).ready(function() {
             $('#searchforleettextbutton').click(function() {
-                
+            
                 var searchInput = $('#searchInput').val();
-                
-              
-  
                if (!searchInput) {
                     Swal.fire({
                         icon: "error",
@@ -169,7 +166,6 @@
         });
         
         //data table initialization
-        
         $(document).ready( function () {
              $('#transLatedListTable').DataTable({
                 errorMode: 'none'

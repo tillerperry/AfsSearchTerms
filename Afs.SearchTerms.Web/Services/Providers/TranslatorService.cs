@@ -22,37 +22,43 @@ public class TranslatorService  : ITranslatorService
     {
         try
         {
-            if (input.Text  is not  null)
-            {
-                return new ApiResponse<TranslatorResponse>
-                {
-                    Message = "success",
-                    Code = StatusCodes.Status200OK,
-                    IsSuccessful = false,
-                    Data = new TranslatorResponse
-                    {
-                        Success = null,
-                        Contents = new Contents
-                        {
-                            Translated = "rjr445",
-                            Text = input.Text,
-                            Translation = "leetspeak"
-                        }
-                    }
-                }; 
-            }
+            // if (input.Text  is not  null)
+            // {
+            //     return new ApiResponse<TranslatorResponse>
+            //     {
+            //         Message = "success",
+            //         Code = StatusCodes.Status200OK,
+            //         IsSuccessful = false,
+            //         Data = new TranslatorResponse
+            //         {
+            //             Success = null,
+            //             Contents = new Contents
+            //             {
+            //                 Translated = "rjr445",
+            //                 Text = input.Text,
+            //                 Translation = "leetspeak"
+            //             }
+            //         }
+            //     }; 
+            // }
            
             var getFunTranslatorResults = await _httpServices.GetFunTranslatorAsync(input);
 
             if (!getFunTranslatorResults.IsSuccessful)
             {
-                getFunTranslatorResults.Code = StatusCodes.Status200OK;
-                     
-                 return getFunTranslatorResults;
+              
+                return new ApiResponse<TranslatorResponse>
+                {
+                    Message = "Could not perform translation kindly try later",
+                    Code = StatusCodes.Status200OK,
+                    IsSuccessful = false,
+                    Data = new TranslatorResponse()
+                    
+                }; 
+                
             }
         
             //save the request and response 
-
             var translationRecord = new TranslationSearch
             {
                 CreatedAt = DateTime.UtcNow,
@@ -70,7 +76,7 @@ public class TranslatorService  : ITranslatorService
             Console.WriteLine(e);
             return new ApiResponse<TranslatorResponse>
             {
-                Message = e.Message,
+                Message = "Something bad happened",
                 Code = StatusCodes.Status200OK,
                 IsSuccessful = false
             };
